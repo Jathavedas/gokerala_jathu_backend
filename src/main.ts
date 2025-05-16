@@ -43,7 +43,7 @@ async function bootstrap() {
   //error handling
   // app.useGlobalFilters(new AllExceptionsFilter());
 
-  await app.listen(process.env.PORT ?? 3000).then(() => {
+  await app.listen(process.env.PORT ?? 3000, '0.0.0.0').then(() => {
     // console.log(process.env.PORT ?? 3000)
   });
 }
